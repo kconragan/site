@@ -1,0 +1,51 @@
+@import 'normalize';
+
+body {
+  background-color: #4B5053;
+  text-align: center;
+}
+
+.container {
+  max-width: 960px;
+  text-align: left;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 288px;
+  line-height: 1;
+  color: #4B5053;
+  /* Kai: */
+  font-family: Adelle-Bold;
+  transform: rotate(-10deg);
+  font-size: 288px;
+  text-shadow: 0px 8px 0px #23F5ED;
+  -webkit-text-stroke: 4px #825E5E; /* stroke color and weight */
+}
+
+.colophon,
+.colophon:after{
+  background-color: #000;
+}
+.colophon {
+  position: relative;
+  line-height: 1;
+  color: #fff;
+  display: inline;
+  white-space: pre-wrap;
+  border: 0 solid #000;
+  border-width: 0.25em 0; /* 0.25em is roughly equal to one space character. */
+}
+.colophon:after {
+  content: "";
+  position: absolute;
+  top: -0.25em;
+  right: 100%;
+  bottom: -0.25em;
+  width: 0.25em;
+}
+.colophon > span {
+  position: relative;
+  z-index: 1;
+  
+}
