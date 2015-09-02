@@ -66,7 +66,7 @@ gulp.task('webserver', function() {
   gulp.src('dist')
     .pipe(webserver({
       host: paths.host,
-      port: paths.port,
+      port: 8080,
       livereload: true,
       directoryListing: false,
       fallback:'index.html'
